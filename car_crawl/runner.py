@@ -4,7 +4,7 @@ import time
 import pandas as pd
 from util.util import User
 
-# 사이트 접속 -> 검색버튼 클릭 -> 전기친환경 클릭 -> 개인 클릭 ->
+# 사이트 접속 -> 전기친환경 클릭 -> 개인 클릭 -> 페이지 번호 클릭
 if __name__ == "__main__":
     user = User()
     user.getBrowser("http://www.encar.com/", new_window=True)
