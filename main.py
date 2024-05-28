@@ -11,7 +11,6 @@ def data_to_db(database: str, table_name: str, if_exists: str = "replace") -> No
 def faq_to_db(database: str, table_name: str, if_exists: str = "replace") -> None:
     df=main()
     mysql = MySQLExecutor(database)
-    
     mysql.df2sql(df, table_name, if_exists)
 
 
