@@ -50,7 +50,7 @@ if uploaded_file is not None or ft == "mysql":
         table_name = st.sidebar.text_input("TABLE: ", "info")
 
         db_passwd = None
-        db_passwd = st.sidebar.text_input("Enter DB password: ", "", type="password")
+        db_passwd = st.sidebar.text_input("Enter DB password: ", "gksrbals0", type="password")
         while db_passwd is None:
             continue
         try:
